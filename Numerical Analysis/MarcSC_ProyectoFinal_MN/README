@@ -1,0 +1,28 @@
+Els codis del projecte final es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+Programa integral.c:
+
+Demana per pantalla el grau dels polinomis de Chebyshev i Legendre. Un cop introduït per pantalla, demana els intervals d'integració de les dues integrals
+en l'ordre que vénen donades a la entrega (primer e^-(x^2) i després e^-(x^2)/cbrt(1-x^2)).
+Finalment demana el nombre de divisions que es volen considerar al realitzar el mètode dels trapezis per a les dues funcions.
+
+Retorna per pantalla el valor de les integrals calculat amb els diversos mètodes (s'inclou TRAPEZIS MOD que és el valor de la integral realitzant el canvi de variable)
+amb els corresponents errors (sempre que aquests es puguin determinar computacionalment)
+
+Programa coeficients.c:
+
+Demana per pantalla el grau dels polinomis de Chebyshev i Legendre.
+
+Retorna els coeficients per a les fórmules de quadratura Gaussiana de dits polinomis, comparant els valors obtinguts pel mèotde de Gauss i les fórmules proporcionades.
+
+Programa elipse.c:
+
+Demana per pantalla l'interval d'integració sobre el qual es vol determinar la longitud de la corba donada. 
+
+Retorna el valor de la longitud de la corba quan la precisió és de 10^-6 pel mètode dels trapezis i pel mètode de quadratura Gaussiana amb els polinomis de Legendre.

@@ -1,0 +1,16 @@
+Els codis de l'exercici 1 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+(Al llarg de tota la pràctica els codis es guarden de forma p3a.c on '3' indica l'exercici, 'a' indica l'apartat.
+(Anàlogament p1C1.c és el codi destinat a l'apartat 'c1' de l'exercici '1')
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla el resultat del càlcul de les arrels corresponents, amb el mètode pertinent a cada apartat.
+
+A més, en alguns dels programes es mostren dades adicionals com: informació dels termes de les fórmules, quocients entre els errors, valor de cada iterat i avaluació de funcions sobre els iterats.
+
+Tots els codis d'aquest exercici es comporten igual, les diferències són la precisió en la que treballen o les fórmules que s'empren per calcular el valor de les arrels de les diferents funcions.

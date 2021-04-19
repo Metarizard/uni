@@ -1,0 +1,13 @@
+Els codis de l'exercici 3 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla el valor dels iterats i de l'arrel calculats amb el mètode corresponent.
+
+A més, s'explicita el quocient entre els errors dels successius iterats per comparar ordres de convergència.
+
+En mostra un missatge d'error en cas que la derivada sigui nul·la.

@@ -1,0 +1,64 @@
+\documentclass[a4paper,10.4pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+\usepackage[margin=10pt,font=small,labelfont={sf,bf}]{caption}
+\usepackage{appendix}
+\usepackage{titling, titlesec}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{slantsc}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\usepackage{units}
+\usepackage[top=1.25in, bottom=1.25in, left=1.3in, right=1.3in]{geometry}
+
+
+\setcounter{secnumdepth}{4}
+\setlength{\parskip}{8pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\sffamily Pràctica 1: Tema errors}
+\fancyhead[L]{\sffamily Seminari Mètodes Numèrics}
+\fancyfoot[C]{\thepage}
+\titleformat{\section}{\Large\bfseries\sffamily}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\sffamily}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\sffamily}{\thesubsubsection}{1em}{}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\begin{document}
+
+ 
+\title{\Large\bfseries\sffamily Mètodes Numèrics\\Pràctica 1: \Large\sffamily Tema d'errors}
+\author{\sffamily Marc Seguí Coll: Conclusions individuals\\\normalsize\emph{Universitat Autònoma de Barcelona}}
+\date{\normalsize Març \emph{$2019$}}
+
+
+\maketitle
+%\epigraph{¿Qué es la vida? Una ilusión,
+%una sombra, una ficción.}{\textit{Calderón de la Barca}}
+ 
+\section{Importància en el condicionament de fórmules}
+
+Moltes vegades es passa per alt que l'ordinador treballa amb la representació de nombres en punt flotant. Aquest fet no es pot ignorar ja que els errors comesos poden arribar a ser prou significatius sobretot en problemes mal condicionats.
+
+Els errors moltes vegades vénen pel truncament/arrodoniment de les dades produït per la precisió finita limitada per la representació en punt flotant. Això no és problemàtic sempre i quan l'error relatiu associat a la fórmula emprada no es propagui fins a ordres de magnitud superiors. És en aquest punt on l'anàlisi numèric entra en joc i desenvolupa el seu paper més clau, buscar i definir nous mètodes per realitzar càlculs numèrics que redueixin l'error comès.
+
+S'ha pogut observar a l'informe de la pràctica que una fórmula mal condicionada pot provocar que el resultat obtingut difereixi en diversos ordres de magnitud respecte el valor real. Com a cas extrem, al problema de la variança, que en ser el quadrat d'un nombre és positiva sempre, les operacions aritmètiques per calcular-la retornaven en un dels casos un nombre negatiu, degudes les cancel·lacions sofertes per arrodoniment de l'ordinador.
+
+Per aquests motius és important conèixer bé les dades d'entrada a un programa/fórmula que vagi a realitzar la màquina i saber si el resultats obtinguts es veuran afectats per contaminació dels errors per culpa d'un mal condicionament del problema. En cas que no es coneguin les dades o l'error propagat sigui prou significatiu, convé controlar l'error comès i inclús ser capaç de trobar alternatives que permetin càlculs més segurs.
+
+\section{Cancel·lacions}
+
+Sens dubte alguns dels errors més freqüents que s'han trobat a la pràctica han sigut els de cancel·lació. Aquests succeeixen o bé per arrodoniment de les xifres (arrodonir en molts casos suposa la pèrdua de xifres significatives) o bé per operar nombres amb ordres de magnitud diferents. L'ordinador pot guardar el nombre com una mantissa amb quantitat limitada de xifres i la base en la qual està expressada el nombre elevada a un cert exponent, també limitat. Per això mateix en realitzar operacions amb nombres d'ordres de magnitud diferents, pot ser que es perdin xifres significatives en guardar el nombre resultant.
+
+Els errors de cancel·lació no són greus si l'ordre de magnitud no canvia gaire entre el valor real i el resultat obtingut. El problema de les fórmules mal condicionades és que l'error comès per aquesta causa és normalment catastròfic perquè l'ordre de magnitud canvia significativament.   
+\end{document}

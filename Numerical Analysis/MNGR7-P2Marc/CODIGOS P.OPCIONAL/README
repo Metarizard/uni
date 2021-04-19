@@ -1,0 +1,13 @@
+Els codis de l'exercici opcional es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A 'pop.c' es mostra per pantalla una pregunta sobre el nombre del qual es vol calcular l'arrel i el nombre d'iteracions a realitzar.
+
+Es mostra cada iterat i el valor del productori a cada iterat, amb missatge final del productori com a aproximació de l'arrel.
+
+A 'poperr.c' es mostren per pantalla les tres iteracions de l'error amb les corresponents fites.

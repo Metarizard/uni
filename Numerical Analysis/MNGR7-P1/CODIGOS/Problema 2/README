@@ -1,0 +1,19 @@
+Els codis de l'exercici 2 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla una pregunta sobre el coeficient 'a' de l'equació de segon grau ax^2+bx+c=0.
+
+L'usuari ha d'entrar un nombre per pantalla i introduir-lo amb la tecla INTRO.
+
+Realitza el mateix per als valors de 'b' i 'c'.
+
+El programa comprova que b^2>4*a*c, en cas contrari mostra un error per pantalla. 
+
+Finalment el programa retorna per pantalla les dues solucions de l'equació de segon grau, finalitzant el programa.
+
+Tots els codis d'aquest exercici es comporten igual, les diferències són la precisió en la que treballen o les fórmules que s'empren per calcular el valor de les solucions.

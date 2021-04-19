@@ -1,0 +1,25 @@
+Els codis dels l'exercicis 1, 2 i 3 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+(Als exercicis 1 i 2 els codis es guarden de forma p2n32.c on '2' indica l'exercici, 'n32' indica el nombre de nodes.)
+(p1n4e.c és idèntic a p1n4.c tret de la sortida de dades per pantalla)
+(A l'exercici 3 els codis representen els nodes positius p3p.c, negatius p3n.c i simètrics p3s)
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+Programes exercicis 1 i 2:
+
+Exemple: p1n64.c Mostra per pantalla 5 columnes amb les dades de les abscises on s'avalua la funció i el polinomi interpolador, els nodes d'interpolació, els valors que pren el polinomi interpolador en les abcises d'avaluació, els valors de la funció en els nodes, el valor que pren la funció en les abscises d'avaluació.
+p2n4.c Mostra els resultats de manera similar, amb els nodes i valors de Chebyshev.
+
+Es pot demanar a la consola que escrigui les dades en un fitxer .txt i directament gnuplot ploteja les dades indicant-hi les columnes desitjades.
+
+p1n32e.c retorna per pantalla un missatge amb l'error màxim que es comet, a quin punt es comet, i el valor del polinomi i la funció en aquest punt.
+p2n8e.c realitza el mateix però incloent el cas de Chebyshev.
+
+Programes exercici 3:
+
+Retornen 3 valors espaiats corresponents al valor que pren el polinomi interpolador (de la funció inversa) en el 0, a l'esquerra el valor corresponent per al polinomi de grau 1, al mig el polinomi de grau 3 i a la dreta el de grau 5.

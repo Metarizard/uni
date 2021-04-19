@@ -1,0 +1,18 @@
+Els codis de l'exercici 3 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla una pregunta sobre el nombre de dades 'n' a analitzar.
+
+L'usuari ha d'entrar un nombre natural per pantalla i introduir-lo amb la tecla INTRO.
+
+En el cas dels codis 'p3as.c' (simple) i 'p3ad.c' (doble) l'usuari introdueix manuealment les 'n' dades a plaer per pantalla.
+Seguidament calcula la variança associada a les dades introduïdes mitjançant dos mètodes (definició i fórmula) i els retorna per pantalla, acabant així el programa.
+
+En el cas del codi 'p3c.c' (simple i doble a la vegada) l'usuari introdueix per pantalla un nombre generador 'gen' i una diferència 'uwu' de manera que el programa genera 'n' nombres aleatoris dins l'interval [gen,gen+uwu] 
+Finalment calcula la variança d'aquestes dades aleatòries en precisió simple i doble amb els dos mètodes i els retorna per pantalla, finalitzant el programa.
+Realitza el mateix per als valors de 'b' i 'c'.

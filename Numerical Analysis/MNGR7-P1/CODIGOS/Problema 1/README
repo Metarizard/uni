@@ -1,0 +1,22 @@
+Els codis de l'exercici 1 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+(Al llarg de tota la pràctica els codis es guarden de forma p3as.c on '3' indica l'exercici, 'a' indica l'apartat i 's' indica la precisió simple)
+(Anàlogament p1bd.c és el codi destinat a l'apartat 'b' de l'exercici '1' en precisió doble)
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla una pregunta sobre el punt on es vol avaluar la funció.
+
+L'usuari ha d'entrar un nombre per pantalla i introduir-lo amb la tecla INTRO.
+
+Finalment el programa retorna per pantalla el resultat d'avaluar la funció en el punt introduït i es torna a la consola.
+
+Notem l'ús de funcions especials que tracten el específicament arguments en 'float' com cosf del codi 'p1as.c'.
+
+Tots els codis d'aquest exercici es comporten igual, les diferències són la precisió en la que treballen o les fórmules que s'empren per calcular el valor que pren f.
+
+'coss.c' i 'cosd.c' es comporten igual i serveixen per comprovar com es comporten les funcions 'cosf' i 'cos' pròpies de la llibreria introduïda.

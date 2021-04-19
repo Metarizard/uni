@@ -1,0 +1,17 @@
+Els codis de l'exercici 4 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla una pregunta sobre el nombre 'N' de sumands de la suma parcial.
+
+L'usuari ha d'entrar un nombre natural per pantalla i introduir-lo amb la tecla INTRO.
+
+S'efectua el càlcul de la suma parcial i es retorna el resultat per pantalla, finalitzant el programa.
+
+Tots els codis d'aquest exercici es comporten igual, les diferències són la precisió en la que treballen o els mètodes que s'empren per calcular el valor de les sumes parcials.
+
+Els resultats provinents dels codis 'p4ds.c' i 'p4dd.c' no s'han presentat a la memòria perquè s'han considerat irrellevants.

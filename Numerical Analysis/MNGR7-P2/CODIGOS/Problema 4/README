@@ -1,0 +1,13 @@
+Els codis de l'exercici 4 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla el valor dels termes de la fórmula a cada iteració.
+
+Es mostra cada iterat i l'error absolut comparat amb el terme anterior, fins al punt en que l'error absolut creix, en aquest moment para i mostra un missatge per pantalla.
+
+A més, s'explicita el quocient entre els errors dels successius iterats per comparar ordres de convergència.

@@ -1,0 +1,19 @@
+Els codis de l'exercici 5 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+A continuació es mostra per pantalla una pregunta sobre la longitud del costat 'a' d'un triangle.
+
+L'usuari ha d'entrar un nombre per pantalla i introduir-lo amb la tecla INTRO.
+
+Realitza el mateix per als valors de 'b' i 'c'.
+
+S'efectua el càlcul de l'àrea del triangle i retorna el resultat per pantalla, finalitzant el programa.
+
+En el cas dels codis 'p5cs.c' i 'p5cd.c' es comprova que a>=b>=c per tal d'evitar haver de reordenar els costats per calcular l'àrea (en cas contrari hi ha casos d'overflow).
+
+Tots els codis d'aquest exercici es comporten igual, les diferències són la precisió en la que treballen o les fórmules que s'empren per calcular el valor de l'àrea.

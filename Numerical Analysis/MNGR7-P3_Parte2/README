@@ -1,0 +1,12 @@
+Els codis dels l'exercicis 4, 5, 6 i 7 es compilen de la següent forma:
+
+gcc -o NomPrograma -g -Wall -pedantic NomCodi.c -lm
+
+(A l'exercici 4 els codis es guarden de forma p4t.c on 't' indica trapezis i p4s.c on 's' indica Simpson.)
+(A l'exercici 3 els codis representen el nombre de nodes p5n4.c indica n=4 nodes i p5n32 indica n=64 nodes.)
+
+Un cop compilat, s'executa com:
+
+./NomPrograma
+
+Tots els programes retornen per pantalla els resultats de les integrals en cada mètode (indicat en parèntesi i el nombre de nodes si escau) i les fites de l'error.
